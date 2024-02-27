@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <title>Responsive bottom navigation</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.svg" alt="Logo" class="nav__logo-img">
+                CareVet
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Servicios</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Skills</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Portfolio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactme" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="themeToggle" class="nav__button">
+                <img src="./assets/img/modo-light.svg" alt="Toggle Theme" class="nav__icon-svg">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <!--=============== HOME ===============-->
+        <section class="section section__height" id="home" style="background-color: blueviolet;">
+            <div class="swiperc">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide" style="background-color: yellow">
+                        <img src="assets/img/img1.png" alt="Imagen 1" class="swiper-image">
+                        <div class="slide-content">
+                            <h3>Título del Slide 1</h3>
+                            <p>Descripción del Slide 1. Puedes agregar texto aquí.</p>
+                            <a href="#" class="btn">Botón 1</a>
+                            <a href="#" class="btn">Botón 2</a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide" style="background-color: blue;">
+                        <!-- <img src="ruta-imagen-2.jpg" alt="Imagen 2" class="swiper-image"> -->
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide" style="background-color: rgb(255, 208, 0);">
+                        <!-- <img src="ruta-imagen-1.jpg" alt="Imagen 1" class="swiper-image"> -->
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide" style="background-color: rgb(255, 0, 30);">
+                        <!-- <img src="ruta-imagen-2.jpg" alt="Imagen 2" class="swiper-image"> -->
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="section section__height" id="about" style="background-color: cyan;">
+            <h2 class="section__title">About</h2>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="section section__height" id="skills" style="background-color: green;">
+            <h2 class="section__title">Skills</h2>
+        </section>
+
+        <!--=============== PORTFOLIO ===============-->
+        <section class="section section__height" id="portfolio" style="background-color: lightblue;">
+            <h2 class="section__title">Portfolio</h2>
+        </section>
+
+        <!--=============== CONTACTME ===============-->
+        <section class="section section__height" id="contactme" style="background-color: yellow;">
+            <h2 class="section__title">Contactme</h2>
+        </section>
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
